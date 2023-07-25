@@ -34,7 +34,7 @@ int main(int argc, char **argv)
 
     ch = argv[1][0];
     char a[256];
-    while (fgets(a, 256, fp) != NULL)
+    while (fgets(a, 256, fp) != NULL)//fgets(char *ch,length, File * fp)，从fp文件给ch赋值，知道length或者遇到换行符
     {
         if (strchr(a, ch));//查找到该字符那么，返回该字符的的地址。
         {
